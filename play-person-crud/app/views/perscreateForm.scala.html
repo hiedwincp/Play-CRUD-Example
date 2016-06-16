@@ -1,0 +1,26 @@
+@(persForm: Form[Person])
+
+@import helper._
+
+@import b3.vertical.fieldConstructor
+
+@main {
+    
+    <h1>Add a computer</h1>
+    
+    @b3.form(routes.PersonController.save()) {
+        
+        <fieldset>
+            @b3.text(persForm("name"), '_label -> "Person Name", '_help -> "")
+            @b3.text(persForm("country"), '_label -> "Person Country", '_help -> "")
+
+        </fieldset>
+        
+        <div class="actions">
+            <input type="submit" value="Create" class="btn primary"> or 
+            <a href="@routes.PersonController.list()" class="btn">Cancel</a>
+        </div>
+        
+    }
+    
+}
