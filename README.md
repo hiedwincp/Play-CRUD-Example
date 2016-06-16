@@ -14,9 +14,9 @@ Functions implemented :
  
 Code for this all features are
 
->> PersonController.java - All REST implmentation for CRUD operations  - under the folder /app/contollers
->> Person.java - DB Entity model + DAO functionlity uing Ebean as ORM for all DB releated operations  - under the folder /app/model
->>  *.scala.html - for UI disaplys of Person CRUD operation - under the folder /app/view
+1. PersonController.java - All REST implmentation for CRUD operations  - under the folder /app/contollers
+2. Person.java - DB Entity model + DAO functionlity uing Ebean as ORM for all DB releated operations  - under the folder /app/model
+3. *.scala.html - for UI disaplys of Person CRUD operation - under the folder /app/view
 
 
 Note: Test folder is not updated with latest test case, please fill this gap from your side
